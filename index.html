@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jga7 · Tool &amp; app creator</title>
+<meta name="description" content="Jga7 makes free tools and apps for Windows.">
+<meta property="og:title" content="Jga7 · Tool &amp; app creator">
+<meta property="og:description" content="Jga7 makes free tools and apps for Windows.">
+<meta property="og:image" content="https://jga7o.github.io/icon.png">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #060607; --panel: #0d0d10; --card: #141318; --line: #2a2730;
+    --ink: #ecebef; --mute: #9a97a3;
+    --green: #2fe0a0; --pink: #c21a5a; --pink-dark: #2a0a18;
+  }
+  * { box-sizing: border-box; }
+  html { color-scheme: dark; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 17px; line-height: 1.6;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--green); }
+  a:hover { color: var(--ink); }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+
+  header.hero { padding: 72px 0 56px; text-align: center; }
+  .hero img.logo { width: 132px; height: 132px; border-radius: 28px; margin: 0 auto 24px;
+    box-shadow: 0 0 40px rgba(47, 224, 160, .25), 0 0 60px rgba(194, 26, 90, .18); }
+  .hero h1 { font-size: clamp(2.4rem, 8vw, 3.6rem); margin: 0; line-height: 1.1; }
+  .hero .role { font-size: clamp(1.15rem, 3.5vw, 1.4rem); margin: 10px 0 0; }
+  .hero .role span:first-child { color: var(--green); }
+  .hero .role span:last-child { color: var(--pink); }
+  .hero p.lead { color: var(--mute); max-width: 560px; margin: 18px auto 0; }
+
+  section { padding: 48px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: clamp(1.5rem, 4vw, 1.9rem); margin: 0 0 24px; }
+
+  .project { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; align-items: center; }
+  .project img { border-radius: 10px; border: 1px solid var(--line); }
+  .project h3 { font-size: 1.35rem; margin: 0 0 6px; }
+  .project .meta { color: var(--mute); font-size: .95rem; margin: 0 0 12px; }
+  .project p { margin: 0 0 14px; }
+
+  .btns { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 9px 18px; border-radius: 8px; font-weight: 700; text-decoration: none;
+    border: 2px solid var(--green); color: var(--bg); background: var(--green); }
+  .btn:hover { background: transparent; color: var(--green); }
+  .btn.out { background: transparent; color: var(--ink); border-color: var(--line); }
+  .btn.out:hover { border-color: var(--green); color: var(--green); }
+
+  .soon { margin-top: 20px; border: 2px dashed var(--line); border-radius: 14px; padding: 22px; color: var(--mute); text-align: center; }
+
+  footer { border-top: 1px solid var(--line); padding: 32px 0 48px; color: var(--mute); font-size: .95rem; text-align: center; }
+  footer p { margin: 4px 0; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <img class="logo" src="icon.png" alt="Jga7 logo" width="132" height="132">
+    <h1>Jga7</h1>
+    <p class="role"><span>Tool</span> &amp; <span>app creator</span></p>
+    <p class="lead">I make free tools and apps for Windows: simple to use, careful with your files.</p>
+  </div>
+</header>
+
+<main>
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <img src="https://jga7o.github.io/jga7-mod-tool/images/launch/cover_1920x1080.jpg" alt="Jga7 Mod Tool" width="1920" height="1080" loading="lazy">
+        <div>
+          <h3>Jga7 Mod Tool</h3>
+          <p class="meta">Windows · free · for A Plague Tale: Innocence (Steam)</p>
+          <p>Make a character mod from your own Blender model, hair and eye color. Install it in one click and restore the original files any time.</p>
+          <div class="btns">
+            <a class="btn" href="https://jga7o.github.io/jga7-mod-tool/">Website</a>
+            <a class="btn out" href="https://jga7.gumroad.com/l/ludzha">Gumroad</a>
+            <a class="btn out" href="https://www.nexusmods.com/aplaguetaleinnocence/mods/48">Nexus Mods</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="soon">More tools and apps are on the way.</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Contact: <a href="mailto:fdxskd@gmail.com">fdxskd@gmail.com</a></p>
+    <p><a href="https://github.com/Jga7o">GitHub</a> · <a href="https://jga7.gumroad.com/">Gumroad</a></p>
+    <p>Made by Jga7.</p>
+  </div>
+</footer>
+</body>
+</html>
